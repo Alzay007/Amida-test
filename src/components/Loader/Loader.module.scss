@@ -1,0 +1,40 @@
+.loader {
+  display: grid;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 50px;
+  height: 50px;
+
+  margin: 0 auto;
+  transform: translate(-50%, -50%);
+
+  &::before,
+  &::after {
+    content: "";
+    grid-area: 1/1;
+    --c: radial-gradient(farthest-side, #057C93 92%, #0000);
+    background: 
+      var(--c) 50% 0, 
+      var(--c) 50% 100%, 
+      var(--c) 100% 50%, 
+      var(--c) 0 50%;
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    animation: s2 1s infinite;
+  }
+
+  &::before {
+    margin: 4px;
+    filter: hue-rotate(45deg);
+    background-size: 8px 8px;
+    animation-timing-function: linear;
+  }
+}
+
+@keyframes s2 {
+  100% {
+    transform: rotate(.5turn);
+  }
+}

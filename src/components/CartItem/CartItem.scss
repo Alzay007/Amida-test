@@ -1,0 +1,30 @@
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+
+  img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-right: 10px;
+  }
+
+  .cart-item-title {
+    flex: 1;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+
+  .cart-item-price {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .remove-btn {
+    color: red;
+    cursor: pointer;
+  }
+}

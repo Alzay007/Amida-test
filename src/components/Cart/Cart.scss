@@ -1,0 +1,32 @@
+.cart-container {
+  position: fixed;
+  top: 70px;
+  right: 20px;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  min-width: 300px;
+  max-width: 600px;
+  max-height: 400px;
+  overflow-y: auto;
+
+  .empty-cart {
+    text-align: center;
+    color: #888;
+  }
+
+  .cart-total {
+    margin-top: 10px;
+    text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .clear-cart-btn {
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+  }
+}
